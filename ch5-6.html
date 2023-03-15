@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Chapter5-6
+        </title>
+        <style>
+  body{
+         background-color: #4e4e50; 
+         font-family: arial, helvetica, sans-serif; 
+         margin-top: 0px;
+         
+      }
+      h1,h2,h3,h4,h5,h6{
+         color: crimson;
+      }
+      h1{
+         font-size: 1.5em;
+      }
+      h2{
+         font-size: 1.05em;
+      }
+      h3{
+         font-size: 0.95em;
+      }
+      h4{
+        font-size: 0.75em;
+      }
+      ol{
+         margin-left: 0.5em;
+         color: rgb(142, 170, 231);
+      }
+      ol li{
+        padding-top: 0.25em;
+
+      }
+      .answer{
+        color: rgb(120, 148, 120);
+        padding-right: 1em;
+      }
+      td{
+        border: 3px solid lightgray;
+        color: rgb(142, 170, 231);
+      }
+      th{
+        color: rgb(142, 170, 231);
+        border: 2px solid gray ;
+      }
+      table{
+         width:800px;
+         font-size: 1.3em;
+         font-weight: bold;
+         background-color: #0a2850;
+         margin: auto;
+      }
+      a{
+         text-decoration: none;
+      }
+      a:link{
+         color: lightgray;
+      }
+      a:visited{
+         color: gray;
+      }
+      a:hover{
+         color: crimson;
+      }
+      a:active{
+         color: white;
+      }
+        </style>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr style="background-color: #362e80;">
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="https://www.pvcc.edu/">PVCC</a></th>
+                    <th><a href="https://www.w3schools.com/html/">W3 Schools</a></th>
+                    <th><a href="contactus.html">Contact Us</a></th>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td colspan="4" style="font-size: 135%;">
+                        Chapter 5:Computer Systems Organization
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 80%">
+                        Student: Nick C.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        Von Neumann Computer Architecture, 4 Major Subsystems:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Memory.</li>
+                            <li>Input/Output.</li>
+                            <li>The Arithmetic/Logic Unit.</li>
+                            <li>The Control Unit.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:125%">
+                        Von Neumann Computer Architecture, 3 Characteristics:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>The Four major subsystems.</li>
+                            <li>The Stored Program Concept.</li>
+                            <li>The Sequential Execution Of Instructions.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:125%">
+                        Computer Architecture Terms:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>RAM: <span class="answer">It is s a form of computer memory that can be read and changed in any order, typically used to store working data and machine code.</span></li>
+                            <li>Cache:<span class="answer"> To exploit this observation, the first time that the computer references a piece of data, it should copy that data from regular RAM memory to a special, high-speed memory unit called cache memory.</span> </li>
+                            <li>Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:</li>
+                            <ol>
+                                <li><span class="answer">It will access that same instruction or piece of data in the very near future.</span></li>
+                                <li><span class="answer">It will soon access the instructions or data that are located near that piece of data, where “near” means an address whose numerical value is close to this one.</span></li>
+                            </ol>
+                            <li>ROM: <span class="answer">A special type of random access memory into which information has been prerecorded during manufacture. This infor- mation cannot be modified or removed, only fetched. ROM is used to hold important system instructions and data in a place where a user cannot acci- dentally or intentionally overwrite them.</span></li>
+                            <li>Memory cell size:<span class="answer">The number of bits per cell is called the cell size or the memory width, and it is usually denoted as W.</span></li>
+                            <li>Memory Cell Address:<span class="answer">Each memory cell in RAM is identified by a unique unsigned integer address 0, 1, 2, 3, . . . .</span></li>
+                            <li>Maximum Memory Size:<span class="answer">The value 2N is called the address space or maximum memory size of the computer.</span></li>
+                            <li>Register:<span class="answer">contains the data value being fetched or stored.</span></li>
+                            <li>Fetch:<span class="answer"> Fetch a copy of the contents of the memory cell with the specified address and return those contents as the result of the operation. The original contents of the memory cell that was accessed are unchanged</span></li>
+                            <li>Store:<span class="answer"></span>Store the specified value into the memory cell specified by address. The previous contents of the cell are lost. This is termed a destructive store.</li>
+                            <li>Memory Access Time:<span class="answer">One of the characteristics of random access memory is that the time to carry out either a fetch or a store operation is the same for all 2N addresses. At current levels of technology, this time, called the memory access time, is typically about 5–10 nanoseconds (nanosecond = 1 nsec = 10−9 seconds = 1 billionth of a second).</span></li>
+                            <li>DASD:<span class="answer">A direct access storage device (DASD) is one in which, it takes the same amount of time to access every cel, and equal access time, has been eliminated.</span></li>
+                            <li>Arithmetic And Logic Unit (ALU):<span class="answer">The arithmetic/logic unit (ALU) is the subsystem that performs such mathematical and logical operations as addition, subtraction, and comparison for equality.</span></li>
+                            <li>Control Unit<span class="answer">The most fundamental characteristic of the Von Neumann architecture is the stored program—a sequence of machine language instructions stored as binary values in memory.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 135%;">
+                        Chapter 6:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 125%;">
+                        Four things the interface between the Computer and the Hardware does:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Hides from the user the messy details of the underlying hardware.</li>
+                            <li>Presents information about what is happening in a way that does not require in-depth knowledge of the internal structure of the system.</li>
+                            <li>Allows easy user access to the resources available on this computer.</li>
+                            <li>Prevents accidental or intentional damage to hardware, programs, and data.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 125%">
+                        Responsibilities of Systems Software:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture.</li>
+                            <li>Presents important information to the user in a way that is easy to understand.</li>
+                            <li>Allows the user to access machine resources in a simple and efficient way.</li>
+                            <li>Provides a secure and safe environment in which to operate.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 125%;">
+                        Terms:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Systems Software:<span class="answer">A collection of computer programs that manage the resources of a computer and facilitates access to those resources.</span></li>
+                            <li>User Interface
+                                :<span class="answer">All modern operating systems provide a powerful graphical user interface (GUI) that gives the user an intuitive visual overview as well as graphical control of the capabilities and services of the computer.</span></li>
+                            <li>Language Services:<span class="answer">These programs, called assemblers, compilers, and interpreters, allow you to write programs in a high-level, user-oriented language rather than the machine language of Chapter 5 and to ex- ecute these programs easily and efficiently.</span></li>
+                            <li>Memory Managers:<span class="answer">These programs allocate memory space for programs and data and retrieve this memory space when it is no longer needed.</span></li>
+                            <li>Information Managers:<span class="answer">These programs handle the organization, storage, and retrieval of information on storage devices such as the hard drives, DVDs, flash drives, and tapes described in Sec- tion 5.2.2, as well as information stored remotely in data cen- ters (cloud storage). They allow you to organize your information in an efficient hierarchical manner, using directories, folders, and files and to keep your personal data safe from accidental or intentional misuse.</span></li>
+                            <li>I/O Managers:<span class="answer">These software packages allow you to easily and efficiently use the many different types of input and output devices that exist on a modern computer system.</span></li>
+                            <li>Scheduler:<span class="answer">This system program keeps a list of programs ready to run on the processor, and it selects the one that will execute next. The scheduler allows you to have several different programs active at a single time, for instance, surfing the web while you are waiting for a file to finish printing.</span></li>
+                            <li>Utilities:<span class="answer">These collections of library routines provide a wide range of useful services either to a user or to other system routines. Text editors, online help routines, image and sound applications, and control panels are examples of utility routines. Sometimes these utilities are organized into collections called program libraries.</span></li>
+                            <li>Assembly Language:<span class="answer">Assembly languages created a more productive, user-oriented environment, and assemblers were one of the first pieces of system software to be widely used. </span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size:125%">
+                        Functions of an Operating System:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li><span class="answer">The User Interface.</span></li>
+                            <li><span class="answer">System Security and Protection.</span></li>
+                            <li><span class="answer">Efficient Management of Resources.</span></li>
+                            <li><span class="answer">The Safe Use of Resources.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 125%">
+                        Size of Byte Groups: Powers of 10:
+                    </td>
+                </tr>
+                <table style="td{font-size:80%}">
+                <tr>
+                    <th>Quantity in Bytes</th>
+                    <th> Base-10 Value</th>
+                    <th>Amount of Textual Information</th>
+                </tr>
+                <tr>
+                    <td>1 Byte</td>
+                    <td>10^0</td>
+                    <td>One Character</td>
+                </tr>
+                <tr>
+                    <td>1 kilobyte</td>
+                    <td>10^3</td>
+                    <td>One typed page</td>
+                </tr>
+                <tr>
+                    <td>1 Megabyte</td>
+                    <td>10^6</td>
+                    <td>Two Or Three Novels</td>
+                </tr>
+                <tr>
+                    <td>1 Gigabyte</td>
+                    <td>10^9</td>
+                    <td>A Department Libary Or Large Personal Libary</td>
+                </tr>
+                <tr>
+                    <td>1 Terabyte</td>
+                    <td>10^12</td>
+                    <td>The Libary Of A Major Academic Research Universtiy</td>
+                </tr>
+                <tr>
+                    <td>1 Petabyte</td>
+                    <td>10^15</td>
+                    <td>All Printed Material In All Libraries</td>
+                </tr>
+                <tr>
+                    <td>1 Exabyte</td>
+                    <td>10^18</td>
+                    <td>All Words Ever Printed Throughout Human History</td>
+                </tr>
+                <tr>
+                    <td>1 Zettabyte</td>
+                    <td>10^21</td>
+                    <td>As Of 2014, The Total Amount Of Information Stored Globally On The World Wide Web Was About 4-5 Zettabytes</td>
+                </tr>
+                <tr>
+                    <td>1 Yottabyte</td>
+                    <td>10^24</td>
+                    <td>According To An Article In Gizomodo, A Design And Technology Blog, Storing 1 Yottabyte Of Data On Hard Drives Would Require 1 Million Data Centers That Would Fill The States Of Rhode Island And Delaware                    </td>
+                </tr>
+                <tr>
+                </table>
+            </table>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
