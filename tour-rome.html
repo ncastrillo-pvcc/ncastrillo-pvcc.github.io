@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Holiday Roma Tours</title>
+        <style>
+            body{
+               background-color: #66579b; 
+               font-family: arial, helvetica, sans-serif; 
+               margin-top: 0px;
+               
+            }
+            h1,h2,h3,h4,h5,h6, p{
+               color: rgba(0, 0, 0, 0.6);
+            }
+            ul{
+               margin-left: 2.5em;
+            }
+            ol{
+               margin-left: 0.5em;
+               color: rgb(182, 137, 54);
+            }
+            ol li{
+              padding-top: 0.25em;
+            }
+            table{
+               width:800px;
+               background-color: #baaee7;
+               margin: auto;
+            }
+            a{
+               text-decoration: none;
+            }
+            a:link{
+               color: lightgray;
+            }
+            a:visited{
+               color: rgb(123, 153, 152);
+            }
+            a:hover{
+               color: crimson;
+            }
+            a:active{
+               color: white;
+            }
+             p, h1, .i-r{
+                margin: auto;
+                padding: 5px;
+            }
+            form{
+                padding: 15px;
+                margin: auto;
+            }
+            .i-r{
+                width: 500px;
+                height: auto;
+            }
+            p{
+                font-size: 107%;
+            }
+            .mid-table, .mid-table-tr, .mid-table-td{
+                border: 3px solid gray; 
+                border-collapse: collapse;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            .mid-table{
+                width: 500px;
+                height: auto;
+            }
+            .center-text{
+                text-align: center;
+            }
+         </style>
+         <script type="text/javascript">
+            function rometour()
+            {
+                //define variables
+
+                var air = 1200;
+                var hotel_day = 265;
+                var meals_day = 75;
+                var bus_tour = 80;
+                var activities = 220;
+                var num_nights = 5;
+
+                //data variables
+
+                var num_guests = 0;
+                var total_air = 0;
+                var total_hotel_days = 0;
+                var total_meals_days = 0;
+                var total_bus_tour = 0;
+                var activities_day = 0;
+                var total_cost = 0;
+                
+                //calculations 
+                
+                num_guests = prompt("Please enter the number of Guests (Note: there is a guest limit of 5)");
+                total_air = air * num_guests;
+                total_hotel_days = hotel_day * num_nights;
+                total_meals_days = meals_day * num_nights * num_guests;
+                total_activities_days = activities * num_guests;
+                total_bus_tour = num_guests * bus_tour;
+                total_cost = total_air + total_hotel_days + total_meals_days + total_activities_days + total_bus_tour;
+
+                //display itemized receipt
+
+                alert(
+                
+                "\n Holiday Roma Tours" +
+                "\n------------------------------------------" +
+                "\n Number of Guests :      " + num_guests +
+                "\n Number of Nights :      " + num_nights +
+                "\n------------------------------------------" +
+                "\nTotal trip cost:         $" + total_air +
+                "\nTotal hotel cost:        $" + total_hotel_days +
+                "\nTotal meals cost:        $" + total_meals_days +
+                "\nTotal bus tour cost:     $" + total_bus_tour +
+                "\nTotal activities cost:   $" + total_activities_days +
+                "\n------------------------------------------" +
+                "\nTotal                    $" + total_cost
+                );
+
+            }
+
+         </script>
+    </head>
+    <body>
+        <header>
+
+            <table>
+            <tr style="background-color: #66579b; font-size: 1.3em;
+            font-weight: bold;">
+               <td>
+                  <a href="index.html">Home</a>
+               </td>
+               <td>
+                  <a href="https://www.pvcc.edu">PVCC</a>
+               </td>
+               <td>
+                  <a href="https://www.w3schools.com/html/">W3 Schools</a>
+               </td>
+               <td>
+                  <a href="contactus.html">Contact Us</a>
+               </td>
+            </tr>
+         </table>
+
+        </header>
+
+        <main>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <h1>
+                            Holiday Roma!
+                        </h1>
+                        <p>Visit Rome with us! <b>Holiday Roma Tours</b> are the most exciting way to visit this ancient Italian city. Stay in the luxurious <b>Hotel Farnese</b>, enjoy fabulous meals each day, and visit Rome's most renown sites and museums on our <b>Hop On/Hop Off</b> buses. Your trip will also include a night of musical theater at the <b>Teatro Sistina!</b></p>
+                        <div class="center-text">
+                            <img src="rome.jpg" alt="rome-img" class="i-r">
+                            <table class="mid-table">
+                                <tr class="mid-table-tr">
+                                    <td colspan="3" class="mid-table-td">
+                                        <b>Holiday Roma Tour Rates</b>
+                                    </td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td class="mid-table-td"><b>Air:</b></td>
+                                    <td class="mid-table-td">Round trip airfare from JFK to Rome</td>
+                                    <td class="mid-table-td">$1200</td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td class="mid-table-td"><b>Hotel:</b></td>
+                                    <td class="mid-table-td">5 nights in 4-star hotel</td>
+                                    <td class="mid-table-td">$265 per night</td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td class="mid-table-td"><b>Meals:</b></td>
+                                    <td class="mid-table-td">Includes 5 breakfasts & 5 dinners</td>
+                                    <td class="mid-table-td">$75 per day</td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td class="mid-table-td"><b>Bus Tour:</b></td>
+                                    <td class="mid-table-td">Hop on/Hop off bus: 3 days pass</td>
+                                    <td class="mid-table-td">$80</td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td class="mid-table-td"><b>Activities:</b></td>
+                                    <td class="mid-table-td">Includes 1 theater performance & museum tickets</td>
+                                    <td class="mid-table-td">$200</td>
+                                </tr>
+                                <tr class="mid-table-tr">
+                                    <td colspan="3" class="mid-table-td"><em>VAT is included. Alcoholic beverages and tips are not included.</em></td>
+                                </tr>
+                            </table>
+                            <form>
+                                <input type="button" value="Click to calculate the Holiday Roma Tours rate!" class="button" onclick="rometour()">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>
