@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chapter 9-10</title>
+        <style>
+            body{
+            background-color: #413029; 
+            font-family: arial, helvetica, sans-serif;
+            }
+            .wrap{
+                width: 800px;
+                margin: auto;
+            }
+            table{
+                border: 2px solid gray;
+                margin: auto;
+                border-collapse: collapse;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:link{
+                color: rgb(20, 19, 19);
+            }
+            a:visited{
+                color: rgb(30, 127, 139);
+            }
+            a:hover{
+                color: rgb(10, 38, 116);
+            }
+            a:active{
+                color: rgb(27, 22, 22);
+            }
+            .content{
+                width: 800px;
+                background-color: rgb(102, 60, 60);
+                color: rgb(230, 153, 102);
+            }
+            .nav-links{
+                width: 800px;
+                font-size: 1.25em;
+            }
+            td{
+                border: 2px solid gray;
+            }
+            .t-w-t td{
+                border: 3px solid #6f2232;
+            }
+            .t-w-t{
+                margin: 1.25em;
+            }
+            .question{
+                font-size: 1.2em;
+                color: #4c6e4f;
+            }
+            .answer{
+                font-size: 1.2em;
+                color: #4f8840;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+        <header>
+            <table class="nav-links" style="background-color: #6f2232;">
+                <tr>
+                    <td>
+                        <a href="index.html">Home</a>
+                     </td>
+                     <td>
+                        <a href="https://www.pvcc.edu">PVCC</a>
+                     </td>
+                     <td>
+                        <a href="https://www.w3schools.com/html/">W3 Schools</a>
+                     </td>
+                     <td>
+                        <a href="contactus.html">Contact Us</a>
+                     </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table class="content">
+                <tr>
+                    <td colspan="4">
+                        <h2>Chapter 9: Introduction to High Level Languages</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Chapter 10: Tower of Babel: Programming Languages</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h3>Student: Nick C.</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Chapter 9: Introduction to High Level Languages</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>List four disadvantages of using assembly language:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li><span class="answer">The programmer must “manually” manage the movement of data items between and among memory locations and registers (although such data items can be assigned mnemonic names).</span></li>
+                            <li><span class="answer">The programmer must take a microscopic view of a task, breaking it down into tiny subtasks—ADD, COMPARE, INCREMENT—that direct what is going on in individual memory locations and registers.</span></li>
+                            <li><span class="answer">An assembly language program is machine specific.</span></li>
+                            <li><span class="answer">Statements are not natural-language-like (although operations are given mnemonic code words as an improvement over a string of bits).</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>List four expectations programmer have for writing programs in a high-level language ("third generation" language):</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li><span class="answer">The programmer need not manage the details of the movement of data items within memory or pay any attention to exactly where those items are stored.</span></li>
+                            <li><span class="answer">The programmer can take a macroscopic view of tasks, thinking at a higher level of problem solving (add B and C, and call the result A). The “primitive operations” used as building blocks in algorithm construction (see Chapter 1) can be larger.</span></li>
+                            <li><span class="answer">Programs are portable rather than machine specific.</span></li>
+                            <li><span class="answer">Programming statements are closer to natural language and use stan- dard mathematical notation.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Briefly describe or define:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li><span class="question">Object code - </span><span class="answer">There is a price to pay for this higher level of abstraction. When we moved from machine language to assembly language, we needed a piece of system software an assembler to translate assembly language instructions into binary machine language instructions (object code).</span></li>
+                            <li><span class="question">Source code - </span><span class="answer">Now that we have moved up another layer with regard to the language in which we communicate, we need a different type of translator to convert our high-level language instructions into machine language instructions. This new type of translator is called a compiler. Rather than doing the entire translation job right down to object code, a compiler often translates high-level language instructions (source code) only into assembly language (the hard part of the translation).</span></li>
+                            <li><span class="question">Procedural language - </span><span class="answer">Most of today’s popular high-level programming languages fall into the same philosophical family; they are procedural languages (also called imperative languages). A program written in a procedural language consists of sequences of statements that manipulate data items</span></li>
+                            <li><span class="question">Integrated Development - </span><span class="answer">The IDE lets the programmer perform a number of tasks within the shell of a single application program, rather than having to use a separate program for each task.</span></li>
+                            <li><span class="question">Software development life cycle - </span><span class="answer">The overall sequence of steps needed to complete a large-scale software project</span></li>
+                            <li><span class="question">Waterfall model of software development - </span><span class="answer">In the software development process, these plateaus would be the feasibility study, problem specification, program design, and so on This imagery suggests that software development is a com- pletely sequential process, that is, one step must be completed before moving on to the next, and that previous steps are never revisited.</span></li>
+                            <li><span class="question">Agile model of software development - </span><span class="answer">The Merriam-Webster online dictionary defines the word agile as “marked by ready ability to move with quick easy grace; having a quick, resourceful and adaptable character.”</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Describe each of these components of the software development life cycle:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li><span class="question">Feasibility study - </span><span class="answer">The feasibility study evaluates a proposed project and compares the costs and benefits of various solutions.</span></li>
+                            <li><span class="question">Problem specification - </span><span class="answer">If it is determined that the project is feasible and will benefit from a computer solution, and that software development is to go forward, we move on to the problem specification phase. Problem specification involves developing a clear, concise, and unambiguous statement of the exact problem the software is to solve.</span></li>
+                            <li><span class="question">Program design - </span><span class="answer">In a traditional programming approach, the divide-and-conquer strategy (also called top-down decomposition) comes into play. Tasks are broken down into subtasks, which are broken down into sub-subtasks, and so on, until each piece is small enough to code comfortably. These pieces work together to accomplish the overall job. In an object-oriented program- ming approach, the appropriate objects are identified, together with their data and the subtasks they must perform. This allows classes to be designed with variables to store the data, and functions (also called methods) to carry out these subtasks. Objects from these classes cooperate to accomplish the total job.</span></li>
+                            <li><span class="question">Algorithm selection - </span><span class="answer">Once the various sub- tasks have been identified, algorithms must be found to carry them out.</span></li>
+                            <li><span class="question">Coding - </span><span class="answer">Coding is the process of converting the detailed designs into computer code. If the design has been carefully developed, this should be a relatively routine job. Perhaps reusable code can be pulled from a program library, or a useful class can be employed.</span></li>
+                            <li><span class="question">Debugging - </span><span class="answer">The process of locating and correcting program errors, and it can be a slow and expensive operation that requires as much effort as writing the program in the first place.</span></li>
+                            <li><span class="question">Testing - </span><span class="answer">Even though a program produces correct answers for 1, 5, or even 1,000 data sets, how can we be sure that it is 100% correct and will work on all data? One approach, called empirical testing, is to design a special set of test cases, called a test suite, and run the program using this special test data. Test data that is carefully chosen to exercise all the different logic paths through a program can help uncover errors.</span></li>
+                            <li><span class="question">Verification - </span><span class="answer">Program verification can be used to prove that if the input data to a program satisfies certain conditions, then, after the program has been run on this data, the output data satisfies certain other conditions.</span></li>
+                            <li><span class="question">Documentation - </span><span class="answer">Program documentation is all of the written and online material that makes a program understandable.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Chapter 10: Tower of Babel: Programming Languages</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Questions & Answers:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol type="A">
+                            <li value="17"><span class="question">Why does the textbook refer to "the Tower of Babel" regarding computer languages?</span></li>
+                            <li value="1"><span class="answer">The biblical story of the Tower of Babel takes place at a time when “the whole earth had one language and the same words.” The people began to build a city with a mighty tower when, suddenly, everyone began speaking in different tongues and could no longer communicate. They became confused, abandoned the tower, and scattered “over the face of all the earth.” A shared enterprise was impossible to pursue without the mutual understand- ing fostered by a common language, and (the message this story was intend- ed to convey) the power of what people could do was thus forever limited.</span></li>
+                            <li value="17"><span class="question">Why isn't there just one computer programming language?</span></li>
+                            <li value="1"><span class="answer">There are multiple programming languages not so much because there are tasks that one language cannot do but because each language was designed to meet the specific needs of one particular area of application.</span></li>
+                            <li value="17"><span class="question">Why didn't FORTRAN use the less than ( &#x276E; ) symbol when comparing two numbers?</span></li>
+                            <li value="1"><span class="answer">Early versions of Fortran required all variable identifiers to be uppercase. Also it did not allow the use of mathematical symbols such as < to compare two quantities; the keypunches that were used to create the punched cards on which early Fortran programs were submitted to the computer had no such symbols.</span></li>
+                            <li value="17"><span class="question">What was COBOL designed for?</span></li>
+                            <li value="1"><span class="answer">COBOL was designed to serve business needs such as managing inventories and payrolls.</span></li>
+                            <li value="17"><span class="question">What was the language, C, designed for?</span></li>
+                            <li value="1"><span class="answer">It was originally designed for systems programming, in particular for writing the operating system UNIX.</span></li>
+                            <li value="17"><span class="question">What is the difference between C and C++?</span></li>
+                            <li value="1"><span class="answer">The C++ language was developed in the early 1980s by Bjarne Stroustrup, also at AT&T Labs. C++ is in fact a “superset” of C, meaning that all of the C language is part of C++. Everything that can be done in C—including the ability to change the contents of specific memory locations can be done in C++. But C++adds many new features to C, giving it more sophistication and cleaner ways to do certain tasks. </span></li>
+                            <li value="17"><span class="question">Who or what is the language, Ada, named for and why?</span></li>
+                            <li value="1"><span class="answer">Ada, after Ada Augusta Byron Lovelace, daughter of the poet Lord Byron and later the wife of Lord Lovelace.</span></li>
+                            <li value="17"><span class="question">What is a Java "applet"?</span></li>
+                            <li value="1"><span class="answer">Java applets (small applica- tions) are programs designed to run from webpages. Applets are embedded in webpages on central servers; when the user views a webpage with a Java-enabled browser, the applet’s code is temporarily transferred to the user’s system (whatever that system may be) and interpreted/executed by the browser itself.</span></li>
+                            <li value="17"><span class="question">How much does Python cost to download, install, and use?</span></li>
+                            <li value="1"><span class="answer">Python is an open source language. The source code is freely available and can be used, distributed, or modified by anyone.</span></li>
+                            <li value="17"><span class="question">What is Microsoft. NET?</span></li>
+                            <li value="1"><span class="answer">Microsoft .NET Framework that supports C# and other programming languages. The .NET Framework is essentially a giant collection of tools for software development. It was designed so that traditional text-based applications, GUI applications, and web-based programs can all be built with equal ease.</span></li>
+                            <li value="17"><span class="question">What is SQL and what is it used for?</span></li>
+                            <li value="1"><span class="answer">Our first specialized language is SQL, which stands for Structured Query Language. SQL is designed to be used with databases, which are collections of related facts and information.</span></li>
+                            <li value="17"><span class="question">What is R and what is it used for?</span></li>
+                            <li value="1"><span class="answer">R is a specialized programming language designed for statistical comput- ing and graphics.</span></li>
+                            <li value="17"><span class="question">What is Go (or golang) and what is it used for?</span></li>
+                            <li value="1"><span class="answer">Go, sometimes referred to as golang, is a programming language developed at Google.Go was born out of frustration with existing languages and environments for systems programming.</span></li>
+                            <li value="17"><span class="question">What is Swift and what is it used for?</span></li>
+                            <li value="1"><span class="answer">The language is called Swift, and it was designed for building apps on the iOS and macOS operating systems, in others words, for the iPhone/iPad and the Mac. Apple developers had long been using Objective-C, an object-oriented version of the C language.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Briefly describe each of the following alternative programming paradigms:  </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li><span class="question">Functional programming - </span><span class="answer">A functional programming language views every task in terms of (surprise!) functions.</span></li>
+                            <li><span class="question">Logic programming - </span><span class="answer">Logic programming languages go a step further toward not speci- fying exactly how a task is to be done.</span></li>
+                            <li><span class="question">Parallel programming - </span><span class="answer">Parallel computing is a type of computation in which many calculations or processes are carried out simultaneously.</span></li>
+                        </ol>  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Programming language comparison:  </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <table class="t-w-t" style="text-align: center;">
+                            <tr>
+                                <td colspan="5">Computer Programming Language Comparisons</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li>Language</li></ol></td>
+                                <td>Comments</td>
+                                <td>Input Statement(s)</td>
+                                <td>Increase by 1</td>
+                                <td>Output Statement</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li value="2">Ada</li></ol></td>
+                                <td>--</td>
+                                <td>TEXT_IO.PUT<br>INT_IO.GET</td>
+                                <td>n:n+1;</td>
+                                <td>TEXT_IO.PUT</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li value="3">C++</li></ol></td>
+                                <td>//</td>
+                                <td>cin >> n;</td>
+                                <td>n = n + 1;</td>
+                                <td>cout << endl;<br>
+                                    cout << "My favorite number is 1 more than that, " << n << endl;<br>
+                                    cout << endl << endl;</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li value="4">C#</li></ol></td>
+                                <td>//</td>
+                                <td>n = Convert.ToInt32(Console.ReadLine());</td>
+                                <td>n = n + 1;</td>
+                                <td>Console.WriteLine();<br>
+                                    Console.Write("My favorite number is ");<br>
+                                    Console.WriteLine("1 more than that, " + n);<br>
+                                    Console.WriteLine();<br>
+                                    Console.WriteLine();</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li value="5">Java</li></ol></td>
+                                <td>//</td>
+                                <td>Scanner inp = new Scanner(System.in);<br>
+                                    n = inp.nextInt();</td>
+                                <td>n = n + 1;</td>
+                                <td>System.out.println();<br>
+                                    System.out.println("My favorite number is 1 more " + "than that, " + n);<br>
+                                    System.out.println();<br>
+                                    System.out.println();</td>
+                            </tr>
+                            <tr>
+                                <td><ol><li value="6">Python</li></ol></td>
+                                <td>#</td>
+                                <td>n = int(input("What is your favorite number? "))</td>
+                                <td>n = n + 1</td>
+                                <td>print()<br>
+                                    print("My favorite number is 1 more than that,", n)<br>
+                                    To pause the program until the user presses Enter key:<br>
+                                    input("\n\nPress the Enter key to exit")</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Stack Overflow Q & A:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol type="A">
+                            <li value="17"><span class="question">What is the purpose of Stack Overflow?</span></li>
+                            <li value="1"><span class="answer">Stack Overflow helps people find the answers they need, when they need them. We're best known for our public Q&A platform that over 100 million people visit every month to ask questions, learn, and share technical knowledge.</span></li>
+                            <li value="17"><span class="question">How much research effort is expected of Stack Overflow users?</span></li>
+                            <li value="1"><span class="answer">A lot. Asking a question on Stack Overflow should be the last step in your process for finding an answer—if the information that you need already exists, then you should be able to find it before asking.</span></li>
+                            <li value="17"><span class="question">Why should I post complete errors? Why isn't the message itself enough?</span></li>
+                            <li value="1"><span class="answer">A generic message like "No such file or directory" only says something about the specific error code that was returned, but nothing about where, why or how it happened.The rest of the error message is vital for filling in the gaps. It's especially important to copy-paste everything exactly as it is, because even tiny changes in punctuation provide important information.</span></li>
+                            <li value="17"><span class="question">Why should I not upload images of code/data/errors?</span></li>
+                            <li value="1"><span class="answer">The first reason is that links to images fail. The second reason is that text on images is not searchable. The third reason is that it gives you an incentive 'not to try'; simply show us a screenshot of your code and call it a day.</span></li>
+                            <li value="17"><span class="question">Why is "Can someone help me?" not an actual question?</span></li>
+                            <li value="1"><span class="answer">Stack Overflow is a question & answer site. You may think that you have asked a reasonable, answerable question, but a question like "Can someone help me"? really doesn't qualify. First, a bit of background: The purpose of Stack Overflow is to create a knowledge repository of solutions to programming problems. Its mantra is "Make the Internet a better place". That means that a primary characteristic of a good question is that it is likely to be searched by someone else. "Will you help me do X?" doesn't do that. More than likely, no one will ever be trying to do, and searching for, the exact same thing as you in exactly the same way.</span></li>
+                            <li value="17"><span class="question">Under what circumstances may I add "urgent" or other similar phrases to my question, in order to obtain faster answers?</span></li>
+                            <li value="1"><span class="answer">At best this is extra fluff in your question, which gets in the way of your actual question. This makes it harder for people to help you, which makes it less likely that you'll get an answer. Nobody is going to see that you need an answer ASAP and then drop everything they're doing in order to help you. Your emergencies are your own. Alternatively: lack of planning on your part does not constitute an emergency on my part. At worst it'll be seen as very rude.</span></li>
+                            <li value="17"><span class="question">Advice for non-native English speakers</span></li>
+                            <li value="1"><span class="answer">If you aren't a native English speaker, here are some rules that can improve some of the reactions to your posts, and also the quality of the answers to your questions.(If you are a native English speaker, you should also be following these rules.)Behind the questions and answers on this site, there is a complex reviewing/moderating mechanism, and your extra efforts can make some of that work significantly easier for the rest of us.</span></li>
+                            <li value="17"><span class="question">I want to seed Stack Overflow with questions about my product/project. What do I need to know?</span></li>
+                            <li value="1"><span class="answer">
+                                <ul>
+                                    <li>Can I support my product here?</li>
+                                    <li>Tagging</li>
+                                    <li>Questions must be on-topic</li>
+                                    <li>Don't recreate your documentation on Stack Overflow</li>
+                                    <li>Don't recreate your documentation on Stack Overflow</li>
+                                    <li>Answer seeding</li>
+                                    <li>Don't get your coworkers to vote on your posts</li>
+                                </ul>
+                            </span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Stack Overflow Ask:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol type="A">
+                            <li value="17"><span class="question">What is a line of code or code snippet (small chunk of code) to do this?</span></li>
+                            <li value="1"><span class="answer">Markdown editor indent.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h2>Stack Overflow Ask: </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol type="A">
+                            <li value="17"><span class="question">What should a Stack Overflow question title do?</span></li>
+                            <li value="1"><span class="answer">Be specific and imagine you’re asking a question to another person.</span></li>
+                            <li value="17"><span class="question">What are the steps to writing a good Stack Overflow question?</span></li>
+                            <li value="1"><span class="answer">
+                                <ul>
+                                    <li>Summarize your problem in a one-line title.</li>
+                                    <li>Describe your problem in more detail.</li>
+                                    <li>Describe what you tried and what you expected to happen.</li>
+                                    <li>Add “tags” which help surface your question to members of the community.</li>
+                                    <li>Review your question and post it to the site.</li>
+                                </ul>
+                            </span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                       <h2>Stack Overflow Programming Survey:</h2> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol type="A">
+                            <li value="17"><span class="question">How many people answered the 2021 survey?</span></li>
+                            <li value="1"><span class="answer">In May 2021 over 80,000 developers told us how they learn and level up, which tools they’re using, and what they want.</span></li>
+                            <li value="17"><span class="question">What were the top three countries where responses came from?</span></li>
+                            <li value="1"><span class="answer">
+                                <ol>
+                                    <li>US</li>
+                                    <li>India</li>
+                                    <li>Germany</li>
+                                </ol>
+                            </span></li>
+                            <li value="17"><span class="question">What was the age range of coders when they wrote their first line of code?</span></li>
+                            <li value="1"><span class="answer">Coders start young: over 50% of respondents wrote their first line of code between the ages of 11 to 17.</span></li>
+                            <li value="17"><span class="question">What were the three most popular ways of learning how to code?</span></li>
+                            <li value="1"><span class="answer">It is no surprise that almost 60% of respondents learned how to code from online resources. Younger respondents tend to learn from online courses, forums, and other online resources. Older respondents, on the other hand, learned from more traditional mediums like school and books.</span></li>
+                            <li value="17"><span class="question">How long have most people been coding?</span></li>
+                            <li value="1"><span class="answer">50% of respondents have been coding for ten years or less. Respondents from the United Kingdom, on average, have the most years coding out of our top ten countries.</span></li>
+                            <li value="17"><span class="question">What percentage of coders identified as male?</span></li>
+                            <li value="1"><span class="answer">91% of all respondents and 92% of professional developers identify as a man. </span></li>
+                            <li value="17"><span class="question">Your opinion: How can the IT community get more women in coding?</span></li>
+                            <li value="1"><span class="answer">The IT community should encoruage their female family members or freinds to try out or learn about coding.</span></li>
+                            <li value="17"><span class="question">What were the top three programming languages?</span></li>
+                            <li value="1"><span class="answer">
+                                <ol>
+                                    <li>Java</li>
+                                    <li>HTML/CSS</li>
+                                    <li>Phyton</li>
+                                </ol>
+                            </span></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <table class="content">
+                <tr>
+                    <td colspan="4">
+                        <h2>Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.</h2>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+        </div>
+    </body>
+</html>
