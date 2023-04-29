@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script type="text/javascript">
+        function calculatetip() {
+            //constants & variables
+            const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', });
+            var amount_in = 0;
+            var service_in = 0;
+            var total_tip = 0;
+            // Retrive teh user data from the form, and assign the data to input variables
+            amount_in = document.getElementById('amount').value;
+            service_in = document.getElementById('services').value;
+            //if user does not enter a bill amount, display an error message
+            if (amount_in == '') {
+                alert("Please enter the amount of the bill.");
+                return;
+            }
+            //calculate the total & display result
+            total_tip = amount_in * service_in;
+            //total = document.getElementById('total');
+            document.getElementById('total').value = dollar.format(total_tip);
+        }
+    </script>
+    <style>
+        body {
+            background-color: #9d9d9d;
+            font-family: calibri, arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .content table {
+            width: 500px;
+            color: black;
+            background-color: #9d9d9d;
+            border: none;
+            font-weight: bold;
+        }
+        .content td{
+            text-align: right;
+            padding: 10px;
+            border: none;
+        }
+        input{
+            width: 150px;
+            font-weight: bold;
+        }
+        input, select{
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        body {
+            background-color: #504e57;
+            font-family: arial, helvetica, sans-serif;
+        }
+
+        .wrap {
+            width: 800px;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: rgb(167, 131, 131);
+        }
+
+        a:visited {
+            color: rgb(30, 127, 139);
+        }
+
+        a:hover {
+            color: rgb(10, 38, 116);
+        }
+
+        a:active {
+            color: rgb(27, 22, 22);
+        }
+
+        .content {
+            width: 800px;
+            background-color: rgb(115, 127, 143);
+            color: rgb(62, 88, 158);
+        }
+
+        .nav-links {
+            width: 800px;
+            font-size: 1.25em;
+        }
+
+        td {
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <table class="nav-links" style="background-color: #6f2232;">
+                <tr>
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+                    <td>
+                        <a href="https://www.pvcc.edu">PVCC</a>
+                    </td>
+                    <td>
+                        <a href="https://www.w3schools.com/html/">W3 Schools</a>
+                    </td>
+                    <td>
+                        <a href="contactus.html">Contact Us</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <form>
+                                <table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h2>TIP CALCULATOR</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bill Amount</td>
+                                        <td><input type="text" id="amount" placeholder="Amount Total"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>How was the service?</td>
+                                        <td><select id="services">
+                                            <option selected disabled hidden>Select</option>
+                                            <option value="0.25">25% - Top Notch</option>
+                                            <option value="0.20">20% - Excellent</option>
+                                            <option value="0.15%">15% - Good</option>
+                                            <option value="0.10">10% - Fair</option>
+                                            <option value="0.5">5% - Bad</option>
+                                        </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <input type="button" value="Click here to calculate tip" class="button" onclick="calculatetip()">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="reset">
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 1.2em; text-align: center;">
+                                        <td>
+                                            Tip Amount
+                                        </td>
+                                        <td>
+                                            <input type="text" id="total" placeholder="0">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
