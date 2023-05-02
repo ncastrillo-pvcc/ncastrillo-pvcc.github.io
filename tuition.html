@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script type="text/javascript">
+
+        function calculateT_F() {
+            const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', });
+            var credits = 0;
+            var tuition = 155;
+            var institutional = 1.75;
+            var student_a = 2.90;
+
+            credits = document.getElementById('credits').value;
+
+            if (credits == '') {
+                alert("Please enter the number of credits.");
+                return;
+            }
+
+            var tuition_total = credits * tuition;
+            var institutional_total = credits * institutional;
+            var activity_total = credits * student_a;
+            var totalOwed = tuition_total + institutional_total + activity_total;
+
+            document.getElementById('tuition').value = dollar.format(tuition_total);
+            document.getElementById('institutional').value = dollar.format(institutional_total);
+            document.getElementById('student_ac').value = dollar.format(activity_total);
+            document.getElementById('total').value = dollar.format(totalOwed);
+        }
+
+    </script>
+    <style>
+        body {
+            background-color: #9d9d9d;
+            font-family: calibri, arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .content table {
+            width: 500px;
+            color: black;
+            background-color: #9d9d9d;
+            border: none;
+            font-weight: bold;
+        }
+
+        .content td {
+            text-align: right;
+            padding: 10px;
+            border: none;
+        }
+
+        input {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 80%;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        body {
+            background-color: #504e57;
+            font-family: arial, helvetica, sans-serif;
+        }
+
+        .wrap {
+            width: 800px;
+            margin: auto;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: rgb(167, 131, 131);
+        }
+
+        a:visited {
+            color: rgb(30, 127, 139);
+        }
+
+        a:hover {
+            color: rgb(10, 38, 116);
+        }
+
+        a:active {
+            color: rgb(27, 22, 22);
+        }
+
+        .content {
+            width: 800px;
+            background-color: rgb(115, 127, 143);
+            color: rgb(62, 88, 158);
+        }
+
+        .nav-links {
+            width: 800px;
+            font-size: 1.25em;
+        }
+
+        td {
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <table class="nav-links" style="background-color: #6f2232;">
+                <tr>
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+                    <td>
+                        <a href="https://www.pvcc.edu">PVCC</a>
+                    </td>
+                    <td>
+                        <a href="https://www.w3schools.com/html/">W3 Schools</a>
+                    </td>
+                    <td>
+                        <a href="contactus.html">Contact Us</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <form>
+                                <table>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h2>Tuition & Fees</h2>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Amount of Credits</td>
+                                        <td><input type="text" id="credits" placeholder="credits here"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <input type="button" value="Click here to tuitions and fees." class="button"
+                                                onclick="calculateT_F()">
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 1.2em; text-align: center;">
+                                        <td>
+                                            Tuition
+                                        </td>
+                                        <td>
+                                            <input type="text" id="tuition" placeholder="0">
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 1.2em; text-align: center;">
+                                        <td>
+                                            Institutional
+                                        </td>
+                                        <td>
+                                            <input type="text" id="institutional" placeholder="0">
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 1.2em; text-align: center;">
+                                        <td>
+                                            Student Activity
+                                        </td>
+                                        <td>
+                                            <input type="text" id="student_ac" placeholder="0">
+                                        </td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 1.2em; text-align: center;">
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <input type="text" id="total" placeholder="0">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="text-align: center;">
+                                            <input type="reset">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
